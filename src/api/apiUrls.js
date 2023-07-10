@@ -1,0 +1,2 @@
+export const RESTRUALIST_URL = 'https://www.swiggy.com/dapi/restaurants/list/v5?lat=9.940843700000002&lng=76.3217567&page_type=DESKTOP_WEB_LISTING'
+export const CLOUDINARY_URL = 'https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/'
