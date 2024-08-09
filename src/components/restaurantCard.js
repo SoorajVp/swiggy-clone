@@ -7,7 +7,7 @@ const RestaurantCard = ({
   name,
   cuisines,
   avgRating,
-  deliveryTime,
+  sla,
   costForTwoString,
 }) => {
   return (
@@ -18,13 +18,13 @@ const RestaurantCard = ({
           className="h-32"
           width={250}
           height={50}
-          alt="logo"
+          alt={name}
         ></Image>
         <h4 className="font-bold text-xs pt-1">{name}</h4>
-        <div className="text-xs">{cuisines[0]}</div>
+        <div className="text-xs">{cuisines?.[0]}</div>
         <div className="text-xs py-2 flex justify-between">
           <h2 className="text-xs bg-green-500 text-white px-1">{avgRating}</h2>
-          <h2 className="text-xs">{deliveryTime} Mins</h2>
+          <h2 className="text-xs">{sla?.deliveryTime} Mins</h2>
           <h2 className="text-xs">{costForTwoString}</h2>
         </div>
       </div>
